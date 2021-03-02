@@ -7,4 +7,4 @@ jdk:
 languaje: java
 script:
   - mvn test
-  - sonar-scanner -Dsonar.login=${SONAR_TOKEN}
+  - sonar-scanner -Dsonar.login=${SONAR_TOKEN} -Dsonar.organization=zerasul-github -Dsonar.projectKey=ejemploIC
