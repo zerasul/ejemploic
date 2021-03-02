@@ -2,4 +2,4 @@ sudo: false
 jdk:
   - openjdk8
 languaje: java
-script: mvn test -f <nombrecarpeta>/pom.xml
+script: mvn test
