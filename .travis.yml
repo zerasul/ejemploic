@@ -6,5 +6,5 @@ jdk:
   - openjdk11
 languaje: java
 script:
-  - mvn test
+  - mvn clean install
   - sonar-scanner -Dsonar.login=${SONAR_TOKEN} -Dsonar.organization=zerasul-github -Dsonar.projectKey=ejemploIC
