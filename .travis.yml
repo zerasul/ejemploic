@@ -1,5 +1,10 @@
 sudo: false
+addons:
+  sonarcloud:
+    token: ${SONAR_TOKEN}
 jdk:
   - openjdk8
 languaje: java
-script: mvn test
+script:
+  - mvn test
+  - sonar-scanner -Dsonar.login=${SONAR_TOKEN}
