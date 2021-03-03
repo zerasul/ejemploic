@@ -7,4 +7,4 @@ jdk:
 languaje: java
 script:
   - mvn clean install
-  - sonar-scanner -Dsonar.login=${SONAR_TOKEN} -Dsonar.organization=zerasul-github -Dsonar.projectKey=ejemploIC
+  - mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${SONAR_TOKEN} -Dsonar.organization=zerasul-github -Dsonar.projectKey=ejemploIC
